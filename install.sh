@@ -69,47 +69,47 @@ print_usage(){
 #####################################################################################################
 
 # Nerdtree
-PLUGINS="$PLUGINS https://github.com/scrooloose/nerdtree"
+PLUGINS="$PLUGINS git://github.com/scrooloose/nerdtree.git"
 
 # Clang_complete
-PLUGINS="$PLUGINS https://github.com/Rip-Rip/clang_complete"
+PLUGINS="$PLUGINS git://github.com/Rip-Rip/clang_complete.git"
 
 # SuperTab
-PLUGINS="$PLUGINS https://github.com/ervandew/supertab"
+PLUGINS="$PLUGINS git://github.com/ervandew/supertab.git"
 
 # Tagbar
-PLUGINS="$PLUGINS https://github.com/majutsushi/tagbar"
+PLUGINS="$PLUGINS git://github.com/majutsushi/tagbar.git"
 
 # Airline
-PLUGINS="$PLUGINS https://github.com/bling/vim-airline"
-PLUGINS="$PLUGINS https://github.com/vim-airline/vim-airline-themes"
+PLUGINS="$PLUGINS git://github.com/bling/vim-airline.git"
+PLUGINS="$PLUGINS git://github.com/vim-airline/vim-airline-themes.git"
 
 # A
-PLUGINS="$PLUGINS https://github.com/vim-scripts/a.vim"
+PLUGINS="$PLUGINS git://github.com/vim-scripts/a.vim.git"
 
 # Auto-close
-PLUGINS="$PLUGINS https://github.com/Townk/vim-autoclose"
+PLUGINS="$PLUGINS git://github.com/Townk/vim-autoclose.git"
 
 # Multiple-cursors
-PLUGINS="$PLUGINS https://github.com/terryma/vim-multiple-cursors.git"
+PLUGINS="$PLUGINS git://github.com/terryma/vim-multiple-cursors.git"
 
 # NERDCommenter
-PLUGINS="$PLUGINS https://github.com/scrooloose/nerdcommenter"
+PLUGINS="$PLUGINS git://github.com/scrooloose/nerdcommenter.git"
 
 # UltiSnips
-PLUGINS="$PLUGINS https://github.com/SirVer/ultisnips"
+PLUGINS="$PLUGINS git://github.com/SirVer/ultisnips.git"
 
 # Git
-PLUGINS="$PLUGINS https://github.com/tpope/vim-fugitive.git"
-PLUGINS="$PLUGINS https://github.com/airblade/vim-gitgutter.git"
+PLUGINS="$PLUGINS git://github.com/tpope/vim-fugitive.git"
+PLUGINS="$PLUGINS git://github.com/airblade/vim-gitgutter.git"
 
 # Pathogen
-PLUGINS="$PLUGINS https://github.com/tpope/vim-pathogen"
+PLUGINS="$PLUGINS git://github.com/tpope/vim-pathogen.git"
 
 # Color schemes
-SCHEMES="$SCHEMES https://github.com/JBakamovic/yaflandia.git"
-SCHEMES="$SCHEMES https://github.com/jeffreyiacono/vim-colors-wombat"
-SCHEMES="$SCHEMES https://github.com/morhetz/gruvbox.git"
+SCHEMES="$SCHEMES git://github.com/JBakamovic/yaflandia.git"
+SCHEMES="$SCHEMES git://github.com/jeffreyiacono/vim-colors-wombat.git"
+SCHEMES="$SCHEMES git://github.com/morhetz/gruvbox.git"
 
 #####################################################################################################
 # Setup the installation directory
@@ -168,7 +168,7 @@ echo "$passwd" | sudo -S $SYSTEM_PACKAGE_MANAGER_UPDATE
 echo "$passwd" | sudo -S $SYSTEM_PACKAGE_MANAGER_INSTALL $SYSTEM_PACKAGE_SET
 echo "$passwd" | sudo -S $PIP_INSTALL_CMD $PIP_PACKAGE_SET
 
-mkdir -p $HOME/.fonts && git clone https://github.com/Lokaltog/powerline-fonts.git $HOME/.fonts
+mkdir -p $HOME/.fonts && git clone git://github.com/Lokaltog/powerline-fonts.git $HOME/.fonts
 fc-cache -vf $HOME/.fonts
 
 #####################################################################################################
